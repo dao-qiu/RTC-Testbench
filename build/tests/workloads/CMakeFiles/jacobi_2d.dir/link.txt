@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -DBPF_F_XDP_DEV_BOUND_ONLY=0x40 -O3 -DNDEBUG -Wl,--allow-shlib-undefined -shared -Wl,-soname,jacobi_2d.so -o ../../../tests/workloads/jacobi_2d/jacobi_2d.so CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o 

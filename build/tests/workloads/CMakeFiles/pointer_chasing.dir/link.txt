@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -DBPF_F_XDP_DEV_BOUND_ONLY=0x40 -O3 -DNDEBUG -Wl,--allow-shlib-undefined -shared -Wl,-soname,pointer_chasing.so -o ../../../tests/workloads/pointer_chasing/pointer_chasing.so CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o 
