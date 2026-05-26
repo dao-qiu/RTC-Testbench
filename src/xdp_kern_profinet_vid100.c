@@ -38,27 +38,43 @@ int xdp_sock_prog(struct xdp_md *ctx)
 	__be16 frame_id;
 	void *p = data;
 
+	bpf_printk("xdp_kern_profinet_vid100: Processing packet\n");
+
 	veth = p;
-	if ((void *)(veth + 1) > data_end)
+	if ((void *)(veth + 1) > data_end){
+		bpf_printk("Packet too short for Ethernet header, passing to kernel stack\n");
 		return XDP_PASS;
+	}
 	p += sizeof(*veth);
 
 	/* Check for VLAN frames */
-	if (veth->vlan_proto != bpf_htons(ETH_P_8021Q))
-		return XDP_PASS;
-
+	if (veth->vlan_proto != bpf_htons(ETH_P_8021Q)){
+		 /* If not VLAN frame, pass to kernel stack */
+		 bpf_printk("Not a VLAN frame, passing to kernel stack\n");
+		 return XDP_PASS;
+	}
 	/* Check for valid Profinet frames */
-	if (veth->vlan_encapsulated_proto != bpf_htons(ETH_P_PROFINET_RT))
-		return XDP_PASS;
+	if (veth->vlan_encapsulated_proto != bpf_htons(ETH_P_PROFINET_RT)){
+		 /* If not Profinet frame, pass to kernel stack */
+		 bpf_printk("Not a Profinet frame, passing to kernel stack\n");
+		 return XDP_PASS;
+	}
 
 	/* Check for VID 100 */
-	if ((bpf_ntohs(veth->vlantci) & VLAN_ID_MASK) != 100)
-		return XDP_PASS;
+	// if ((bpf_ntohs(veth->vlantci) & VLAN_ID_MASK) != 100){
+	// 	 /* If not VID 100, pass to kernel stack */
+	// 	 //WARNING: adding bpf_printk will cause bpf program to fail to load
+	// 	//  bpf_printk("Not a VID 100 frame, passing to kernel stack\n");
+	// 	 return XDP_PASS;
+	// }
 
 	/* Check frameId range */
 	rt = p;
-	if ((void *)(rt + 1) > data_end)
-		return XDP_PASS;
+	if ((void *)(rt + 1) > data_end) {
+		 //WARNING: adding bpf_printk will cause bpf program to fail to load
+		// bpf_printk("Packet too short for Profinet RT header, passing to kernel stack\n");
+		 return XDP_PASS;
+	}
 	p += sizeof(*rt);
 
 	frame_id = bpf_htons(rt->frame_id);
@@ -71,18 +87,24 @@ int xdp_sock_prog(struct xdp_md *ctx)
 	case RTC_SEC_FRAMEID:
 	case RTA_FRAMEID:
 	case RTA_SEC_FRAMEID:
+		 /* If frameId matches expected values, redirect to user space */
+		 bpf_printk("Frame ID matches expected values, redirecting to user space\n");
 		goto redirect;
 	default:
+		 /* If frameId does not match expected values, pass to kernel stack */
+		 bpf_printk("Frame ID does not match expected values, passing to kernel stack\n");
 		return XDP_PASS;
 	}
 
 redirect:
 	/* If socket bound to rx_queue then redirect to user space */
 	if (bpf_map_lookup_elem(&xsks_map, &idx)) {
+		bpf_printk("Redirecting frame with ID to user space on queue\n");
 		populate_rx_timestamp(ctx);
 		return bpf_redirect_map(&xsks_map, idx, 0);
 	}
 
+	bpf_printk("No socket bound to queue, passing to kernel stack\n");
 	return XDP_PASS;
 }
 
