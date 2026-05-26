@@ -1214,7 +1214,7 @@ ethtool -K eth1 tx-checksum-ip-generic off
 
 On host PC:
 ```bash
-sudo chrt -f 90 env LD_LIBRARY_PATH=/usr/lib64 ./mirror -c /home/a0500327/Documents/rtc-testbench/am62px-rtc-testbench/mytests/mirror.yaml
+sudo chrt -f 90 env LD_LIBRARY_PATH=/usr/lib64 ./mirror -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/am62px-rtc-testbench/mytests/mirror.yaml
 ```
 
 > `sudo` is required to set real-time thread priorities and write to `/var/log/`. `LD_LIBRARY_PATH=/usr/lib64` is needed until `ldconfig` fix above is applied.
