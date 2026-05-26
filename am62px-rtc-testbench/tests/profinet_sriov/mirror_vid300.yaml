@@ -1,0 +1,43 @@
+---
+#
+# Copyright (C) 2025 Linutronix GmbH
+# Author Kurt Kanzenbach <kurt@linutronix.de>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+Application:
+  ApplicationClockId: CLOCK_TAI
+  # ApplicationBaseStartTimeNS: 0
+  ApplicationBaseStartOffsetNS: 200us
+  ApplicationBaseCycleTimeNS: 1ms
+  ApplicationTxBaseOffsetNS: 950us
+  ApplicationRxBaseOffsetNS: 500us
+  ApplicationXdpProgram: xdp_kern_profinet_vid300.o
+TSNHigh:
+  TsnHighEnabled: true
+  TsnHighXdpEnabled: false
+  TsnHighXdpSkbMode: false
+  TsnHighXdpZcMode: true
+  TsnHighXdpWakeupMode: true
+  TsnHighTxTimeEnabled: false
+  TsnHighTxTimeOffsetNS: 0
+  TsnHighVid: 300
+  TsnHighPcp: 4
+  TsnHighNumFramesPerCycle: 32
+  TsnHighPayloadPattern: |
+    TsnHighPayloadPattern
+  TsnHighFrameLength: 128
+  TsnHighRxQueue: 0
+  TsnHighTxQueue: 0
+  TsnHighSocketPriority: 5
+  TsnHighTxThreadPriority: 98
+  TsnHighRxThreadPriority: 98
+  TsnHighTxThreadCpu: 10
+  TsnHighRxThreadCpu: 10
+  TsnHighInterface: enp1s0f0v2
+  TsnHighDestination: a2:47:31:43:36:4f
+Log:
+  LogThreadPriority: 1
+  LogThreadCpu: 14
+  LogFile: /var/log/mirror_vid300.log
+  LogLevel: Info

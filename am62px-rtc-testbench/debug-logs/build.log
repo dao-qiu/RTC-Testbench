@@ -1,0 +1,217 @@
+/usr/bin/cmake -S/root/RTC-Testbench -B/root/RTC-Testbench/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /root/RTC-Testbench/build/CMakeFiles /root/RTC-Testbench/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/depend
+make  -f CMakeFiles/mirror.dir/build.make CMakeFiles/mirror.dir/depend
+make  -f tests/workloads/CMakeFiles/jacobi_2d.dir/build.make tests/workloads/CMakeFiles/jacobi_2d.dir/depend
+make  -f tests/workloads/CMakeFiles/pointer_chasing.dir/build.make tests/workloads/CMakeFiles/pointer_chasing.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench/tests/workloads /root/RTC-Testbench/build /root/RTC-Testbench/build/tests/workloads /root/RTC-Testbench/build/tests/workloads/CMakeFiles/jacobi_2d.dir/DependInfo.cmake "--color="
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench/tests/workloads /root/RTC-Testbench/build /root/RTC-Testbench/build/tests/workloads /root/RTC-Testbench/build/tests/workloads/CMakeFiles/pointer_chasing.dir/DependInfo.cmake "--color="
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/reference.dir/DependInfo.cmake "--color="
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/mirror.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f tests/workloads/CMakeFiles/jacobi_2d.dir/build.make tests/workloads/CMakeFiles/jacobi_2d.dir/build
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f tests/workloads/CMakeFiles/pointer_chasing.dir/build.make tests/workloads/CMakeFiles/pointer_chasing.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+make[2]: Entering directory '/root/RTC-Testbench/build'
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/mirror.dir/build.make CMakeFiles/mirror.dir/build
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/reference.dir/build.make CMakeFiles/reference.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+[  1%] Building C object tests/workloads/CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o
+[  3%] Building C object tests/workloads/CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o
+cd /root/RTC-Testbench/build/tests/workloads && /usr/bin/cc -Djacobi_2d_EXPORTS -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -fPIC -Wall -Wextra -fPIC -std=gnu99 -MD -MT tests/workloads/CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o -MF CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o.d -o CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o -c /root/RTC-Testbench/tests/workloads/jacobi_2d/jacobi_2d.c
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build/tests/workloads && /usr/bin/cc -Dpointer_chasing_EXPORTS -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -fPIC -Wall -Wextra -fPIC -std=gnu99 -MD -MT tests/workloads/CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o -MF CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o.d -o CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o -c /root/RTC-Testbench/tests/workloads/pointer_chasing/pointer_chasing.c
+[  5%] Building C object CMakeFiles/mirror.dir/src/config.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/config.c.o -MF CMakeFiles/mirror.dir/src/config.c.o.d -o CMakeFiles/mirror.dir/src/config.c.o -c /root/RTC-Testbench/src/config.c
+[  7%] Building C object CMakeFiles/reference.dir/src/config.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/config.c.o -MF CMakeFiles/reference.dir/src/config.c.o.d -o CMakeFiles/reference.dir/src/config.c.o -c /root/RTC-Testbench/src/config.c
+[  8%] Linking C shared library /root/RTC-Testbench/tests/workloads/jacobi_2d/jacobi_2d.so
+cd /root/RTC-Testbench/build/tests/workloads && /usr/bin/cmake -E cmake_link_script CMakeFiles/jacobi_2d.dir/link.txt --verbose=1
+[ 10%] Linking C shared library /root/RTC-Testbench/tests/workloads/pointer_chasing/pointer_chasing.so
+cd /root/RTC-Testbench/build/tests/workloads && /usr/bin/cmake -E cmake_link_script CMakeFiles/pointer_chasing.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -O3 -DNDEBUG -Wl,--allow-shlib-undefined -Wl,--dependency-file=CMakeFiles/jacobi_2d.dir/link.d -shared -Wl,-soname,jacobi_2d.so -o /root/RTC-Testbench/tests/workloads/jacobi_2d/jacobi_2d.so CMakeFiles/jacobi_2d.dir/jacobi_2d/jacobi_2d.c.o
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+/usr/bin/cc -fPIC -O3 -DNDEBUG -Wl,--allow-shlib-undefined -Wl,--dependency-file=CMakeFiles/pointer_chasing.dir/link.d -shared -Wl,-soname,pointer_chasing.so -o /root/RTC-Testbench/tests/workloads/pointer_chasing/pointer_chasing.so CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[ 10%] Built target jacobi_2d
+[ 10%] Built target pointer_chasing
+[ 12%] Building C object CMakeFiles/mirror.dir/src/hist.c.o
+[ 14%] Building C object CMakeFiles/mirror.dir/src/dcp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/hist.c.o -MF CMakeFiles/mirror.dir/src/hist.c.o.d -o CMakeFiles/mirror.dir/src/hist.c.o -c /root/RTC-Testbench/src/hist.c
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/dcp_thread.c.o -MF CMakeFiles/mirror.dir/src/dcp_thread.c.o.d -o CMakeFiles/mirror.dir/src/dcp_thread.c.o -c /root/RTC-Testbench/src/dcp_thread.c
+[ 16%] Building C object CMakeFiles/reference.dir/src/dcp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/dcp_thread.c.o -MF CMakeFiles/reference.dir/src/dcp_thread.c.o.d -o CMakeFiles/reference.dir/src/dcp_thread.c.o -c /root/RTC-Testbench/src/dcp_thread.c
+[ 17%] Building C object CMakeFiles/mirror.dir/src/layer2_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/layer2_thread.c.o -MF CMakeFiles/mirror.dir/src/layer2_thread.c.o.d -o CMakeFiles/mirror.dir/src/layer2_thread.c.o -c /root/RTC-Testbench/src/layer2_thread.c
+[ 19%] Building C object CMakeFiles/reference.dir/src/hist.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/hist.c.o -MF CMakeFiles/reference.dir/src/hist.c.o.d -o CMakeFiles/reference.dir/src/hist.c.o -c /root/RTC-Testbench/src/hist.c
+[ 21%] Building C object CMakeFiles/reference.dir/src/layer2_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/layer2_thread.c.o -MF CMakeFiles/reference.dir/src/layer2_thread.c.o.d -o CMakeFiles/reference.dir/src/layer2_thread.c.o -c /root/RTC-Testbench/src/layer2_thread.c
+[ 23%] Building C object CMakeFiles/mirror.dir/src/lldp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/lldp_thread.c.o -MF CMakeFiles/mirror.dir/src/lldp_thread.c.o.d -o CMakeFiles/mirror.dir/src/lldp_thread.c.o -c /root/RTC-Testbench/src/lldp_thread.c
+[ 25%] Building C object CMakeFiles/reference.dir/src/lldp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/lldp_thread.c.o -MF CMakeFiles/reference.dir/src/lldp_thread.c.o.d -o CMakeFiles/reference.dir/src/lldp_thread.c.o -c /root/RTC-Testbench/src/lldp_thread.c
+[ 26%] Building C object CMakeFiles/mirror.dir/src/log.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/log.c.o -MF CMakeFiles/mirror.dir/src/log.c.o.d -o CMakeFiles/mirror.dir/src/log.c.o -c /root/RTC-Testbench/src/log.c
+[ 28%] Building C object CMakeFiles/reference.dir/src/log.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/log.c.o -MF CMakeFiles/reference.dir/src/log.c.o.d -o CMakeFiles/reference.dir/src/log.c.o -c /root/RTC-Testbench/src/log.c
+[ 30%] Building C object CMakeFiles/mirror.dir/src/log_json.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/log_json.c.o -MF CMakeFiles/mirror.dir/src/log_json.c.o.d -o CMakeFiles/mirror.dir/src/log_json.c.o -c /root/RTC-Testbench/src/log_json.c
+[ 32%] Building C object CMakeFiles/mirror.dir/src/log_mqtt.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/log_mqtt.c.o -MF CMakeFiles/mirror.dir/src/log_mqtt.c.o.d -o CMakeFiles/mirror.dir/src/log_mqtt.c.o -c /root/RTC-Testbench/src/log_mqtt.c
+[ 33%] Building C object CMakeFiles/reference.dir/src/log_json.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/log_json.c.o -MF CMakeFiles/reference.dir/src/log_json.c.o.d -o CMakeFiles/reference.dir/src/log_json.c.o -c /root/RTC-Testbench/src/log_json.c
+[ 35%] Building C object CMakeFiles/reference.dir/src/log_mqtt.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/log_mqtt.c.o -MF CMakeFiles/reference.dir/src/log_mqtt.c.o.d -o CMakeFiles/reference.dir/src/log_mqtt.c.o -c /root/RTC-Testbench/src/log_mqtt.c
+[ 37%] Building C object CMakeFiles/mirror.dir/src/mirror.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/mirror.c.o -MF CMakeFiles/mirror.dir/src/mirror.c.o.d -o CMakeFiles/mirror.dir/src/mirror.c.o -c /root/RTC-Testbench/src/mirror.c
+[ 39%] Building C object CMakeFiles/reference.dir/src/net.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/net.c.o -MF CMakeFiles/reference.dir/src/net.c.o.d -o CMakeFiles/reference.dir/src/net.c.o -c /root/RTC-Testbench/src/net.c
+[ 41%] Building C object CMakeFiles/mirror.dir/src/net.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/net.c.o -MF CMakeFiles/mirror.dir/src/net.c.o.d -o CMakeFiles/mirror.dir/src/net.c.o -c /root/RTC-Testbench/src/net.c
+[ 42%] Building C object CMakeFiles/reference.dir/src/packet.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/packet.c.o -MF CMakeFiles/reference.dir/src/packet.c.o.d -o CMakeFiles/reference.dir/src/packet.c.o -c /root/RTC-Testbench/src/packet.c
+[ 44%] Building C object CMakeFiles/mirror.dir/src/packet.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/packet.c.o -MF CMakeFiles/mirror.dir/src/packet.c.o.d -o CMakeFiles/mirror.dir/src/packet.c.o -c /root/RTC-Testbench/src/packet.c
+[ 46%] Building C object CMakeFiles/reference.dir/src/print.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/print.c.o -MF CMakeFiles/reference.dir/src/print.c.o.d -o CMakeFiles/reference.dir/src/print.c.o -c /root/RTC-Testbench/src/print.c
+[ 48%] Building C object CMakeFiles/mirror.dir/src/print.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/print.c.o -MF CMakeFiles/mirror.dir/src/print.c.o.d -o CMakeFiles/mirror.dir/src/print.c.o -c /root/RTC-Testbench/src/print.c
+[ 50%] Building C object CMakeFiles/reference.dir/src/profinet.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/profinet.c.o -MF CMakeFiles/reference.dir/src/profinet.c.o.d -o CMakeFiles/reference.dir/src/profinet.c.o -c /root/RTC-Testbench/src/profinet.c
+[ 51%] Building C object CMakeFiles/mirror.dir/src/profinet.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/profinet.c.o -MF CMakeFiles/mirror.dir/src/profinet.c.o.d -o CMakeFiles/mirror.dir/src/profinet.c.o -c /root/RTC-Testbench/src/profinet.c
+[ 53%] Building C object CMakeFiles/reference.dir/src/reference.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/reference.c.o -MF CMakeFiles/reference.dir/src/reference.c.o.d -o CMakeFiles/reference.dir/src/reference.c.o -c /root/RTC-Testbench/src/reference.c
+[ 55%] Building C object CMakeFiles/mirror.dir/src/ring_buffer.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/ring_buffer.c.o -MF CMakeFiles/mirror.dir/src/ring_buffer.c.o.d -o CMakeFiles/mirror.dir/src/ring_buffer.c.o -c /root/RTC-Testbench/src/ring_buffer.c
+[ 57%] Building C object CMakeFiles/reference.dir/src/ring_buffer.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/ring_buffer.c.o -MF CMakeFiles/reference.dir/src/ring_buffer.c.o.d -o CMakeFiles/reference.dir/src/ring_buffer.c.o -c /root/RTC-Testbench/src/ring_buffer.c
+[ 58%] Building C object CMakeFiles/reference.dir/src/rta_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/rta_thread.c.o -MF CMakeFiles/reference.dir/src/rta_thread.c.o.d -o CMakeFiles/reference.dir/src/rta_thread.c.o -c /root/RTC-Testbench/src/rta_thread.c
+[ 60%] Building C object CMakeFiles/mirror.dir/src/rta_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/rta_thread.c.o -MF CMakeFiles/mirror.dir/src/rta_thread.c.o.d -o CMakeFiles/mirror.dir/src/rta_thread.c.o -c /root/RTC-Testbench/src/rta_thread.c
+[ 62%] Building C object CMakeFiles/reference.dir/src/rtc_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/rtc_thread.c.o -MF CMakeFiles/reference.dir/src/rtc_thread.c.o.d -o CMakeFiles/reference.dir/src/rtc_thread.c.o -c /root/RTC-Testbench/src/rtc_thread.c
+[ 64%] Building C object CMakeFiles/mirror.dir/src/rtc_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/rtc_thread.c.o -MF CMakeFiles/mirror.dir/src/rtc_thread.c.o.d -o CMakeFiles/mirror.dir/src/rtc_thread.c.o -c /root/RTC-Testbench/src/rtc_thread.c
+[ 66%] Building C object CMakeFiles/reference.dir/src/security.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/security.c.o -MF CMakeFiles/reference.dir/src/security.c.o.d -o CMakeFiles/reference.dir/src/security.c.o -c /root/RTC-Testbench/src/security.c
+[ 67%] Building C object CMakeFiles/reference.dir/src/stat.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/stat.c.o -MF CMakeFiles/reference.dir/src/stat.c.o.d -o CMakeFiles/reference.dir/src/stat.c.o -c /root/RTC-Testbench/src/stat.c
+[ 69%] Building C object CMakeFiles/reference.dir/src/thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/thread.c.o -MF CMakeFiles/reference.dir/src/thread.c.o.d -o CMakeFiles/reference.dir/src/thread.c.o -c /root/RTC-Testbench/src/thread.c
+[ 71%] Building C object CMakeFiles/mirror.dir/src/security.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/security.c.o -MF CMakeFiles/mirror.dir/src/security.c.o.d -o CMakeFiles/mirror.dir/src/security.c.o -c /root/RTC-Testbench/src/security.c
+[ 73%] Building C object CMakeFiles/reference.dir/src/tsn_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/tsn_thread.c.o -MF CMakeFiles/reference.dir/src/tsn_thread.c.o.d -o CMakeFiles/reference.dir/src/tsn_thread.c.o -c /root/RTC-Testbench/src/tsn_thread.c
+[ 75%] Building C object CMakeFiles/mirror.dir/src/stat.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/stat.c.o -MF CMakeFiles/mirror.dir/src/stat.c.o.d -o CMakeFiles/mirror.dir/src/stat.c.o -c /root/RTC-Testbench/src/stat.c
+[ 76%] Building C object CMakeFiles/mirror.dir/src/thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/thread.c.o -MF CMakeFiles/mirror.dir/src/thread.c.o.d -o CMakeFiles/mirror.dir/src/thread.c.o -c /root/RTC-Testbench/src/thread.c
+[ 78%] Building C object CMakeFiles/reference.dir/src/tx_time.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/tx_time.c.o -MF CMakeFiles/reference.dir/src/tx_time.c.o.d -o CMakeFiles/reference.dir/src/tx_time.c.o -c /root/RTC-Testbench/src/tx_time.c
+[ 80%] Building C object CMakeFiles/mirror.dir/src/tsn_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/tsn_thread.c.o -MF CMakeFiles/mirror.dir/src/tsn_thread.c.o.d -o CMakeFiles/mirror.dir/src/tsn_thread.c.o -c /root/RTC-Testbench/src/tsn_thread.c
+[ 82%] Building C object CMakeFiles/mirror.dir/src/tx_time.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/tx_time.c.o -MF CMakeFiles/mirror.dir/src/tx_time.c.o.d -o CMakeFiles/mirror.dir/src/tx_time.c.o -c /root/RTC-Testbench/src/tx_time.c
+[ 83%] Building C object CMakeFiles/reference.dir/src/udp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/udp_thread.c.o -MF CMakeFiles/reference.dir/src/udp_thread.c.o.d -o CMakeFiles/reference.dir/src/udp_thread.c.o -c /root/RTC-Testbench/src/udp_thread.c
+[ 85%] Building C object CMakeFiles/reference.dir/src/utils.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/utils.c.o -MF CMakeFiles/reference.dir/src/utils.c.o.d -o CMakeFiles/reference.dir/src/utils.c.o -c /root/RTC-Testbench/src/utils.c
+[ 87%] Building C object CMakeFiles/mirror.dir/src/udp_thread.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/udp_thread.c.o -MF CMakeFiles/mirror.dir/src/udp_thread.c.o.d -o CMakeFiles/mirror.dir/src/udp_thread.c.o -c /root/RTC-Testbench/src/udp_thread.c
+[ 89%] Building C object CMakeFiles/reference.dir/src/workload.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/workload.c.o -MF CMakeFiles/reference.dir/src/workload.c.o.d -o CMakeFiles/reference.dir/src/workload.c.o -c /root/RTC-Testbench/src/workload.c
+[ 91%] Building C object CMakeFiles/reference.dir/src/xdp.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/reference.dir/src/xdp.c.o -MF CMakeFiles/reference.dir/src/xdp.c.o.d -o CMakeFiles/reference.dir/src/xdp.c.o -c /root/RTC-Testbench/src/xdp.c
+[ 92%] Building C object CMakeFiles/mirror.dir/src/utils.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/utils.c.o -MF CMakeFiles/mirror.dir/src/utils.c.o.d -o CMakeFiles/mirror.dir/src/utils.c.o -c /root/RTC-Testbench/src/utils.c
+[ 94%] Building C object CMakeFiles/mirror.dir/src/workload.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/workload.c.o -MF CMakeFiles/mirror.dir/src/workload.c.o.d -o CMakeFiles/mirror.dir/src/workload.c.o -c /root/RTC-Testbench/src/workload.c
+[ 96%] Building C object CMakeFiles/mirror.dir/src/xdp.c.o
+/usr/bin/cc -D_GNU_SOURCE -I/root/RTC-Testbench/build -I/root/RTC-Testbench/src -O3 -DNDEBUG -Wall -Wshadow -std=gnu99 -Wvla -MD -MT CMakeFiles/mirror.dir/src/xdp.c.o -MF CMakeFiles/mirror.dir/src/xdp.c.o.d -o CMakeFiles/mirror.dir/src/xdp.c.o -c /root/RTC-Testbench/src/xdp.c
+[ 98%] Linking C executable reference
+/usr/bin/cmake -E cmake_link_script CMakeFiles/reference.dir/link.txt --verbose=1
+/usr/bin/cc -O3 -DNDEBUG /usr/lib/aarch64-linux-gnu/libxdp.a /usr/lib/aarch64-linux-gnu/libbpf.a /usr/lib/aarch64-linux-gnu/libyaml.a -Wl,-Bdynamic -Wl,--dependency-file=CMakeFiles/reference.dir/link.d CMakeFiles/reference.dir/src/reference.c.o CMakeFiles/reference.dir/src/config.c.o CMakeFiles/reference.dir/src/utils.c.o CMakeFiles/reference.dir/src/log.c.o CMakeFiles/reference.dir/src/log_mqtt.c.o CMakeFiles/reference.dir/src/log_json.c.o CMakeFiles/reference.dir/src/stat.c.o CMakeFiles/reference.dir/src/ring_buffer.c.o CMakeFiles/reference.dir/src/thread.c.o CMakeFiles/reference.dir/src/tsn_thread.c.o CMakeFiles/reference.dir/src/rtc_thread.c.o CMakeFiles/reference.dir/src/rta_thread.c.o CMakeFiles/reference.dir/src/dcp_thread.c.o CMakeFiles/reference.dir/src/lldp_thread.c.o CMakeFiles/reference.dir/src/udp_thread.c.o CMakeFiles/reference.dir/src/layer2_thread.c.o CMakeFiles/reference.dir/src/net.c.o CMakeFiles/reference.dir/src/xdp.c.o CMakeFiles/reference.dir/src/tx_time.c.o CMakeFiles/reference.dir/src/security.c.o CMakeFiles/reference.dir/src/packet.c.o CMakeFiles/reference.dir/src/hist.c.o CMakeFiles/reference.dir/src/workload.c.o CMakeFiles/reference.dir/src/print.c.o CMakeFiles/reference.dir/src/profinet.c.o -o reference  -lyaml -lbpf -lxdp -lcrypto
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[ 98%] Built target reference
+make  -f CMakeFiles/xdp_kern_profinet_vid100.dir/build.make CMakeFiles/xdp_kern_profinet_vid100.dir/depend
+make  -f CMakeFiles/xdp_kern_opcua_vid100.dir/build.make CMakeFiles/xdp_kern_opcua_vid100.dir/depend
+make  -f CMakeFiles/xdp_kern_profinet_vid200.dir/build.make CMakeFiles/xdp_kern_profinet_vid200.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_profinet_vid100.dir/DependInfo.cmake "--color="
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_profinet_vid200.dir/DependInfo.cmake "--color="
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_opcua_vid100.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_profinet_vid100.dir/build.make CMakeFiles/xdp_kern_profinet_vid100.dir/build
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_profinet_vid200.dir/build.make CMakeFiles/xdp_kern_profinet_vid200.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_profinet_vid100.o xdp_kern_profinet_vid100.c
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_profinet_vid200.o xdp_kern_profinet_vid200.c
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_opcua_vid100.dir/build.make CMakeFiles/xdp_kern_opcua_vid100.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_opcua_vid100.o xdp_kern_opcua_vid100.c
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[ 98%] Built target xdp_kern_profinet_vid100
+make  -f CMakeFiles/xdp_kern_opcua_vid200.dir/build.make CMakeFiles/xdp_kern_opcua_vid200.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_opcua_vid200.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[ 98%] Built target xdp_kern_opcua_vid100
+make  -f CMakeFiles/xdp_kern_opcua_vid300.dir/build.make CMakeFiles/xdp_kern_opcua_vid300.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_opcua_vid300.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_opcua_vid200.dir/build.make CMakeFiles/xdp_kern_opcua_vid200.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_opcua_vid200.o xdp_kern_opcua_vid200.c
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_opcua_vid300.dir/build.make CMakeFiles/xdp_kern_opcua_vid300.dir/build
+[ 98%] Built target xdp_kern_profinet_vid200
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_opcua_vid300.o xdp_kern_opcua_vid300.c
+make  -f CMakeFiles/xdp_kern_avtp_vid400.dir/build.make CMakeFiles/xdp_kern_avtp_vid400.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_avtp_vid400.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_avtp_vid400.dir/build.make CMakeFiles/xdp_kern_avtp_vid400.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_avtp_vid400.o xdp_kern_avtp_vid400.c
+[100%] Linking C executable mirror
+/usr/bin/cmake -E cmake_link_script CMakeFiles/mirror.dir/link.txt --verbose=1
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[100%] Built target xdp_kern_opcua_vid300
+make  -f CMakeFiles/xdp_kern_profinet_veth_dispatch.dir/build.make CMakeFiles/xdp_kern_profinet_veth_dispatch.dir/depend
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /root/RTC-Testbench /root/RTC-Testbench /root/RTC-Testbench/build /root/RTC-Testbench/build /root/RTC-Testbench/build/CMakeFiles/xdp_kern_profinet_veth_dispatch.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[100%] Built target xdp_kern_opcua_vid200
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+make  -f CMakeFiles/xdp_kern_profinet_veth_dispatch.dir/build.make CMakeFiles/xdp_kern_profinet_veth_dispatch.dir/build
+make[2]: Entering directory '/root/RTC-Testbench/build'
+cd /root/RTC-Testbench/src && clang -Wall -O2 -fno-stack-protector -I /usr/include/aarch64-linux-gnu -I /root/RTC-Testbench/build -target bpf -c -g -o /root/RTC-Testbench/build/xdp_kern_profinet_veth_dispatch.o xdp_kern_profinet_veth_dispatch.c
+[100%] Built target xdp_kern_avtp_vid400
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[100%] Built target xdp_kern_profinet_veth_dispatch
+/usr/bin/cc -O3 -DNDEBUG /usr/lib/aarch64-linux-gnu/libxdp.a /usr/lib/aarch64-linux-gnu/libbpf.a /usr/lib/aarch64-linux-gnu/libyaml.a -Wl,-Bdynamic -Wl,--export-dynamic -Wl,--dependency-file=CMakeFiles/mirror.dir/link.d CMakeFiles/mirror.dir/src/mirror.c.o CMakeFiles/mirror.dir/src/config.c.o CMakeFiles/mirror.dir/src/utils.c.o CMakeFiles/mirror.dir/src/log.c.o CMakeFiles/mirror.dir/src/log_mqtt.c.o CMakeFiles/mirror.dir/src/log_json.c.o CMakeFiles/mirror.dir/src/stat.c.o CMakeFiles/mirror.dir/src/ring_buffer.c.o CMakeFiles/mirror.dir/src/thread.c.o CMakeFiles/mirror.dir/src/tsn_thread.c.o CMakeFiles/mirror.dir/src/rtc_thread.c.o CMakeFiles/mirror.dir/src/rta_thread.c.o CMakeFiles/mirror.dir/src/dcp_thread.c.o CMakeFiles/mirror.dir/src/lldp_thread.c.o CMakeFiles/mirror.dir/src/udp_thread.c.o CMakeFiles/mirror.dir/src/layer2_thread.c.o CMakeFiles/mirror.dir/src/net.c.o CMakeFiles/mirror.dir/src/xdp.c.o CMakeFiles/mirror.dir/src/tx_time.c.o CMakeFiles/mirror.dir/src/security.c.o CMakeFiles/mirror.dir/src/packet.c.o CMakeFiles/mirror.dir/src/hist.c.o CMakeFiles/mirror.dir/src/workload.c.o CMakeFiles/mirror.dir/src/print.c.o CMakeFiles/mirror.dir/src/profinet.c.o -o mirror  -lyaml -lbpf -lxdp -lcrypto
+make[2]: Leaving directory '/root/RTC-Testbench/build'
+[100%] Built target mirror
+make[1]: Leaving directory '/root/RTC-Testbench/build'
+/usr/bin/cmake -E cmake_progress_start /root/RTC-Testbench/build/CMakeFiles 0

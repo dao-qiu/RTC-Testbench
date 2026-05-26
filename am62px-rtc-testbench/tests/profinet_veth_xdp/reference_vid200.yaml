@@ -1,0 +1,50 @@
+---
+#
+# Copyright (C) 2023-2025 Linutronix GmbH
+# Author Kurt Kanzenbach <kurt@linutronix.de>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+# Sample reference YAML configuration file for Intel Comet Lake platforms with
+# i225 NIC(s).
+#
+Application:
+  ApplicationClockId: CLOCK_TAI
+  # ApplicationBaseStartTimeNS: 0
+  ApplicationBaseCycleTimeNS: 1ms
+  ApplicationTxBaseOffsetNS: 700us
+  ApplicationRxBaseOffsetNS: 400us
+  ApplicationXdpProgram: xdp_kern_profinet_vid200.o
+TSNHigh:
+  TsnHighEnabled: true
+  TsnHighXdpEnabled: true
+  TsnHighXdpSkbMode: false
+  TsnHighXdpZcMode: false
+  TsnHighXdpWakeupMode: true
+  TsnHighTxTimeEnabled: false
+  TsnHighTxTimeOffsetNS: 0
+  TsnHighVid: 200
+  TsnHighPcp: 5
+  TsnHighNumFramesPerCycle: 32
+  TsnHighPayloadPattern: |
+    TsnHighPayloadPattern
+  TsnHighFrameLength: 128
+  TsnHighRxQueue: 0
+  TsnHighTxQueue: 0
+  TsnHighSocketPriority: 6
+  TsnHighTxThreadPriority: 98
+  TsnHighRxThreadPriority: 98
+  TsnHighTxThreadCpu: 1
+  TsnHighRxThreadCpu: 1
+  TsnHighInterface: veth1tb
+  TsnHighDestination: d2:4c:c5:e2:f7:b8
+Log:
+  LogThreadPriority: 1
+  LogThreadCpu: 7
+  LogFile: /var/log/reference_vid200.log
+  LogLevel: Info
+Debug:
+  DebugStopTraceOnOutlier: false
+  DebugStopTraceOnError: false
+  DebugMonitorMode: false
+  DebugMonitorDestination: 44:44:44:44:44:44

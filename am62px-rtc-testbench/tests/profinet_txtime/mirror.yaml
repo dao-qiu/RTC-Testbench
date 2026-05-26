@@ -1,0 +1,73 @@
+---
+#
+# Copyright (C) 2023-2025 Linutronix GmbH
+# Author Kurt Kanzenbach <kurt@linutronix.de>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+# Sample reference YAML configuration file for Intel Comet Lake platforms with
+# i225 NIC(s).
+#
+Application:
+  ApplicationClockId: CLOCK_TAI
+  # ApplicationBaseStartTimeNS: 0
+  ApplicationBaseCycleTimeNS: 1ms
+  ApplicationTxBaseOffsetNS: 800us
+  ApplicationRxBaseOffsetNS: 300us
+  ApplicationXdpProgram: xdp_kern_profinet_vid100.o
+TSNHigh:
+  TsnHighEnabled: true
+  TsnHighXdpEnabled: true
+  TsnHighXdpSkbMode: false
+  TsnHighXdpZcMode: true
+  TsnHighXdpWakeupMode: true
+  TsnHighTxTimeEnabled: true
+  TsnHighTxTimeOffsetNS: 0
+  TsnHighTxTimeStampEnabled: false
+  TsnHighVid: 100
+  TsnHighNumFramesPerCycle: 1
+  TsnHighPayloadPattern: |
+    TsnHighPayloadPattern
+  TsnHighFrameLength: 128
+  TsnHighRxQueue: 0
+  TsnHighTxQueue: 0
+  TsnHighSocketPriority: 7
+  TsnHighTxThreadPriority: 98
+  TsnHighRxThreadPriority: 98
+  TsnHighTxThreadCpu: 0
+  TsnHighRxThreadCpu: 0
+  TsnHighInterface: enp3s0
+  TsnHighDestination: a8:74:1d:9d:36:14
+TSNLow:
+  TsnLowEnabled: true
+  TsnLowXdpEnabled: true
+  TsnLowXdpSkbMode: false
+  TsnLowXdpZcMode: true
+  TsnLowXdpWakeupMode: true
+  TsnLowTxTimeEnabled: true
+  TsnLowTxTimeOffsetNS: 50us
+  TsnLowTxTimeStampEnabled: false
+  TsnLowVid: 100
+  TsnLowNumFramesPerCycle: 1
+  TsnLowPayloadPattern: |
+    TsnLowPayloadPattern
+  TsnLowFrameLength: 128
+  TsnLowRxQueue: 1
+  TsnLowTxQueue: 1
+  TsnLowSocketPriority: 6
+  TsnLowTxThreadPriority: 98
+  TsnLowRxThreadPriority: 98
+  TsnLowTxThreadCpu: 1
+  TsnLowRxThreadCpu: 1
+  TsnLowInterface: enp3s0
+  TsnLowDestination: a8:74:1d:9d:36:14
+Log:
+  LogThreadPriority: 1
+  LogThreadCpu: 7
+  LogFile: /var/log/mirror_vid100.log
+  LogLevel: Info
+Debug:
+  DebugStopTraceOnOutlier: false
+  DebugStopTraceOnError: false
+  DebugMonitorMode: false
+  DebugMonitorDestination: 44:44:44:44:44:44

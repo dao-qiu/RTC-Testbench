@@ -1,0 +1,58 @@
+---
+#
+# GenericL2 test — mirror node (host PC, enp3s0)
+#
+# Uses EtherType 0xb62c + VID 200 instead of PROFINET (0x8892 + VID 100)
+#
+# XDP program: xdp_kern_opcua_vid200.o
+# Must be present at /usr/local/lib/rtc-testbench/ebpf/ or in CWD.
+#
+# Before running:
+#   1. Update GenericL2Destination with AM62Px eth1 MAC — changes on every reboot!
+#      (ip link show eth1 on AM62Px)
+#   2. Binary must be built with RX_TIMESTAMP=ON (same as reference)
+#
+Application:
+  ApplicationClockId: CLOCK_TAI
+  ApplicationBaseCycleTimeNS: 1ms
+  ApplicationTxBaseOffsetNS: 800us
+  ApplicationRxBaseOffsetNS: 300us
+  ApplicationXdpProgram: xdp_kern_opcua_vid200.o
+GenericL2:
+  GenericL2Name: GenericL2
+  GenericL2Enabled: true
+  GenericL2XdpEnabled: true
+  GenericL2XdpSkbMode: false     # native mode — igc (i225) supports native XDP
+  GenericL2XdpZcMode: true       # ZC mode — igc supports XDP zero-copy
+  GenericL2XdpWakeupMode: true
+  GenericL2TxTimeEnabled: false
+  GenericL2TxTimeOffsetNS: 0
+  GenericL2TxTimeStampEnabled: false
+  GenericL2Vid: 200
+  GenericL2Pcp: 6
+  GenericL2EtherType: 0xb62c
+  GenericL2NumFramesPerCycle: 1
+  GenericL2PayloadPattern: |
+    GenericL2PayloadPattern
+  GenericL2FrameLength: 64
+  GenericL2RxQueue: 0
+  GenericL2TxQueue: 0
+  GenericL2SocketPriority: 7
+  GenericL2TxThreadPriority: 98
+  GenericL2RxThreadPriority: 98
+  GenericL2TxThreadCpu: 0
+  GenericL2RxThreadCpu: 0
+  GenericL2Interface: enp3s0
+  GenericL2Destination: 06:94:05:21:41:ac
+  # GenericL2Interface: eth1
+  # GenericL2Destination: 00:1b:41:0a:08:cf
+Log:
+  LogThreadPriority: 1
+  LogThreadCpu: 2
+  LogFile: /var/log/mirror_genericl2.log
+  LogLevel: Info
+Debug:
+  DebugStopTraceOnOutlier: false
+  DebugStopTraceOnError: false
+  DebugMonitorMode: false
+  DebugMonitorDestination: 44:44:44:44:44:44

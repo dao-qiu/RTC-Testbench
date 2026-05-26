@@ -1,0 +1,60 @@
+---
+#
+# GenericL2 test — reference node (AM62Px, eth1)
+#
+# Uses EtherType 0xb62c + VID 200 instead of PROFINET (0x8892 + VID 100)
+# Avoids EtherType 0x8892 to eliminate any CPSW3G EtherType-specific
+# hardware processing that may corrupt frame bytes on TX.
+#
+# XDP program: xdp_kern_opcua_vid200.o
+# Must be present at /usr/local/lib/rtc-testbench/ebpf/ or in CWD.
+#
+# Before running:
+#   1. Update GenericL2Destination with host PC enp3s0 MAC
+#      (ip link show enp3s0 on host PC)
+#   2. Run configure-rx-flows.sh if not already done
+#
+Application:
+  ApplicationClockId: CLOCK_TAI
+  ApplicationBaseCycleTimeNS: 1ms
+  ApplicationTxBaseOffsetNS: 800us
+  ApplicationRxBaseOffsetNS: 300us
+  ApplicationXdpProgram: xdp_kern_opcua_vid200.o
+GenericL2:
+  GenericL2Name: GenericL2
+  GenericL2Enabled: true
+  GenericL2XdpEnabled: true
+  GenericL2XdpSkbMode: false     # native mode — required with RX_TIMESTAMP=ON
+  GenericL2XdpZcMode: true       # ZC required: bypasses CPSW switch fabric on TX/RX
+  GenericL2XdpWakeupMode: true
+  GenericL2TxTimeEnabled: false
+  GenericL2TxTimeOffsetNS: 0
+  GenericL2TxTimeStampEnabled: false
+  GenericL2Vid: 200
+  GenericL2Pcp: 6
+  GenericL2EtherType: 0xb62c
+  GenericL2NumFramesPerCycle: 1
+  GenericL2PayloadPattern: |
+    GenericL2PayloadPattern
+  GenericL2FrameLength: 64
+  GenericL2RxQueue: 0             # eth1 RX traffic → Flow 0
+  GenericL2TxQueue: 0
+  GenericL2SocketPriority: 7
+  GenericL2TxThreadPriority: 98
+  GenericL2RxThreadPriority: 98
+  GenericL2TxThreadCpu: 3         # isolated core (isolcpus=3)
+  GenericL2RxThreadCpu: 3         # isolated core (isolcpus=3)
+  GenericL2Interface: eth1
+  GenericL2Destination: 00:1b:41:0a:08:cf
+  # GenericL2Interface: enp3s0
+  # GenericL2Destination: 06:94:05:21:41:ac
+Log:
+  LogThreadPriority: 1
+  LogThreadCpu: 0
+  LogFile: /var/log/reference_genericl2.log
+  LogLevel: Info
+Debug:
+  DebugStopTraceOnOutlier: false
+  DebugStopTraceOnError: false
+  DebugMonitorMode: false
+  DebugMonitorDestination: 44:44:44:44:44:44
