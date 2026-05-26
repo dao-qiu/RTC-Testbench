@@ -1,0 +1,1 @@
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc -fPIC -O3 -DNDEBUG -Wl,--allow-shlib-undefined -shared -Wl,-soname,pointer_chasing.so -o ../../../tests/workloads/pointer_chasing/pointer_chasing.so CMakeFiles/pointer_chasing.dir/pointer_chasing/pointer_chasing.c.o 

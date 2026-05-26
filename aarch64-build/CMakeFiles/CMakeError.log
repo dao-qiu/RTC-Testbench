@@ -1,0 +1,174 @@
+Determining if the SO_PREFER_BUSY_POLL exist failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a90a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a90a.dir/build.make CMakeFiles/cmTC_3a90a.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a90a.dir/CheckSymbolExists.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc    -o CMakeFiles/cmTC_3a90a.dir/CheckSymbolExists.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘SO_PREFER_BUSY_POLL’ undeclared (first use in this function); did you mean ‘SO_BUSY_POLL’?
+    8 |   return ((int*)(&SO_PREFER_BUSY_POLL))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   SO_BUSY_POLL
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_3a90a.dir/build.make:78: CMakeFiles/cmTC_3a90a.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3a90a/fast] Error 2
+
+
+File /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_PREFER_BUSY_POLL
+  return ((int*)(&SO_PREFER_BUSY_POLL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the SO_BUSY_POLL_BUDGET exist failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0a0d0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0a0d0.dir/build.make CMakeFiles/cmTC_0a0d0.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a0d0.dir/CheckSymbolExists.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc    -o CMakeFiles/cmTC_0a0d0.dir/CheckSymbolExists.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘SO_BUSY_POLL_BUDGET’ undeclared (first use in this function); did you mean ‘SO_BUSY_POLL’?
+    8 |   return ((int*)(&SO_BUSY_POLL_BUDGET))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   SO_BUSY_POLL
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_0a0d0.dir/build.make:78: CMakeFiles/cmTC_0a0d0.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0a0d0/fast] Error 2
+
+
+File /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/socket.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SO_BUSY_POLL_BUDGET
+  return ((int*)(&SO_BUSY_POLL_BUDGET))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the XDP_TXMD_FLAGS_LAUNCH_TIME exist failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66deb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66deb.dir/build.make CMakeFiles/cmTC_66deb.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66deb.dir/CheckSymbolExists.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc    -o CMakeFiles/cmTC_66deb.dir/CheckSymbolExists.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘XDP_TXMD_FLAGS_LAUNCH_TIME’ undeclared (first use in this function)
+    8 |   return ((int*)(&XDP_TXMD_FLAGS_LAUNCH_TIME))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_66deb.dir/build.make:78: CMakeFiles/cmTC_66deb.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_66deb/fast] Error 2
+
+
+File /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <linux/if_xdp.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef XDP_TXMD_FLAGS_LAUNCH_TIME
+  return ((int*)(&XDP_TXMD_FLAGS_LAUNCH_TIME))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the XDP_TXMD_FLAGS_TIMESTAMP exist failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fb47c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb47c.dir/build.make CMakeFiles/cmTC_fb47c.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb47c.dir/CheckSymbolExists.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc    -o CMakeFiles/cmTC_fb47c.dir/CheckSymbolExists.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘XDP_TXMD_FLAGS_TIMESTAMP’ undeclared (first use in this function)
+    8 |   return ((int*)(&XDP_TXMD_FLAGS_TIMESTAMP))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_fb47c.dir/build.make:78: CMakeFiles/cmTC_fb47c.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fb47c/fast] Error 2
+
+
+File /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <linux/if_xdp.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef XDP_TXMD_FLAGS_TIMESTAMP
+  return ((int*)(&XDP_TXMD_FLAGS_TIMESTAMP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_CMD_QUEUE_GET failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47539/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47539.dir/build.make CMakeFiles/cmTC_47539.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47539.dir/src.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc -DHAVE_CMD_QUEUE_GET   -o CMakeFiles/cmTC_47539.dir/src.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/src.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: linux/netdev.h: No such file or directory
+    2 |   #include <linux/netdev.h>
+      |            ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_47539.dir/build.make:78: CMakeFiles/cmTC_47539.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_47539/fast] Error 2
+
+
+Source file was:
+
+  #include <linux/netdev.h>
+
+  int main() {
+    int i = NETDEV_CMD_QUEUE_GET;
+    return 0;
+  }
+Performing C SOURCE FILE Test HAVE_CMD_NAPI_SET failed with the following output:
+Change Dir: /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0d0f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0d0f5.dir/build.make CMakeFiles/cmTC_0d0f5.dir/build
+gmake[1]: Entering directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d0f5.dir/src.c.o
+/home/a0500327/arm-toolchain/arm-gnu-toolchain-11.3.rel1-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-gcc -DHAVE_CMD_NAPI_SET   -o CMakeFiles/cmTC_0d0f5.dir/src.c.o -c /home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/src.c
+/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp/src.c:2:12: fatal error: linux/netdev.h: No such file or directory
+    2 |   #include <linux/netdev.h>
+      |            ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_0d0f5.dir/build.make:78: CMakeFiles/cmTC_0d0f5.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/a0500327/Documents/rtc-testbench/RTC-Testbench/aarch64-build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0d0f5/fast] Error 2
+
+
+Source file was:
+
+  #include <linux/netdev.h>
+
+  int main() {
+    int i = NETDEV_CMD_NAPI_SET;
+    return 0;
+  }
